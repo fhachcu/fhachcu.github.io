@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/crown-and-lipstick.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>TecnoStore</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light bg-light header-margen">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" height="150" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search"></i>
+                <i _ngcontent-c2="" class="tf-ion-ios-search-strong "></i> Buscar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="" name="">
+                  <a class="btn" href="results.html" role="button"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal">
+            REGISTRO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal2">
+                LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Burger NavBar -->
+    <nav class="navbar  navbar-expand-lg navbar-expand-md  navbar-light sticky-top bd-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <form class="form-inline  my-2 my-lg-0  d-md-none d-lg-none">
+            <input class="form-control w-auto " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0 btn-search" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-page.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fav-page.html">Favoritos</a>
+          </li>
+        </ul>
+        <div class="d-none d-md-block d-md-flex d-lg-flex  navbar-icons">
+          <div class="cartshop-icon">
+            <a class="btn" href="cart-page.html" role="button"><i class="fas fa-shopping-cart"></i> <span class="badge badge-light">4</span>
+            </a>
+          </div>
+          <div class="favorite-icon">   
+            <button type="button" class="btn"><i class="fas fa-star"></i> <span class="badge badge-light">4</span>
+            </button>
+          </div> 
+          <div class="help-icon"> 
+            <button type="button" class="btn"><i class="fas fa-question"></i> <span class="badge badge-light"></span>
+            </button>  
+          </div> 
+        </div>
+      </div>
+    </nav>
+    <!-- / Burger NavBar -->
+  	<div class="container">
+      <div class="card shopping-cart">
+        <div class="card-header bg-dark text-light col-12">
+          <div class="row">
+            <div class="col-12">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+              Carro de compra
+              <a href="" class="btn btn-outline-info btn-sm float-right d-none d-sm-block">Continuar comprando</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- PRODUCT -->
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+              <img class="img-responsive" src="img/hp.webp" alt="prewiew" width="120" height="80">
+            </div>
+            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+              <h4 class="product-name"><strong>Notebook HP</strong></h4>
+              <h4>
+                <small>Notebook Hp 240 G6 Intel Dual Core 4gb 500gb</small>
+              </h4>
+            </div>
+            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+              <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                <h6><strong>50.000 <span class="text-muted">x</span></strong></h6>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4">
+                <div class="quantity">
+                  <input type="button" value="+" class="plus">
+                  <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                  size="4">
+                  <input type="button" value="-" class="minus">
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 text-right">
+                <button type="button" class="btn btn-outline-danger btn-xs">
+                  <i class="far fa-trash-alt" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- END PRODUCT -->
+          <!-- PRODUCT -->
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+              <img class="img-responsive" src="img/pc1.jpg" alt="prewiew" width="120" height="80">
+            </div>
+            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+              <h4 class="product-name"><strong>Notebook Asus</strong></h4>
+              <h4>
+                <small>X540UA-GQ595T Intel Core i7</small>
+              </h4>
+            </div>
+            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+              <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                <h6><strong>60.000 <span class="text-muted">x</span></strong></h6>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4">
+                <div class="quantity">
+                  <input type="button" value="+" class="plus">
+                  <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                  size="4">
+                  <input type="button" value="-" class="minus">
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 text-right">
+                <button type="button" class="btn btn-outline-danger btn-xs">
+                  <i class="far fa-trash-alt" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+              <img class="img-responsive" src="img/mac2.webp" alt="prewiew" width="120" height="80">
+            </div>
+            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+              <h4 class="product-name"><strong>Mac</strong></h4>
+              <h4>
+                <small>Apple Macbook Air 13.3 Mmgf2 I5 1.6ghz 8gb 128gb</small>
+              </h4>
+            </div>
+            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+              <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                <h6><strong>30.000 <span class="text-muted">x</span></strong></h6>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4">
+                <div class="quantity">
+                  <input type="button" value="+" class="plus">
+                  <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                  size="4">
+                  <input type="button" value="-" class="minus">
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 text-right">
+                <button type="button" class="btn btn-outline-danger btn-xs">
+                  <i class="far fa-trash-alt" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+              <img class="img-responsive" src="img/pc3.jpg" alt="prewiew" width="120" height="80">
+            </div>
+            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+              <h4 class="product-name"><strong>Monitor Samsung</strong></h4>
+              <h4>
+                <small>Monitor LED Samsung 27 " LC27F390FHLXZB</small>
+              </h4>
+            </div>
+            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+              <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                <h6><strong>25.000 <span class="text-muted">x</span></strong></h6>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4">
+                <div class="quantity">
+                  <input type="button" value="+" class="plus">
+                  <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                  size="4">
+                  <input type="button" value="-" class="minus">
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 text-right">
+                <button type="button" class="btn btn-outline-danger btn-xs">
+                  <i class="far fa-trash-alt" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+              <img class="img-responsive" src="img/pc5.jpg" alt="prewiew" width="120" height="80">
+            </div>
+            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+              <h4 class="product-name"><strong>Notebook Dell</strong></h4>
+              <h4>
+                <small>Inspiron Gamer 15 5577 i5 7300HQ 8GB 1TB 15.6"</small>
+              </h4>
+            </div>
+            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+              <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                <h6><strong>37.000 <span class="text-muted">x</span></strong></h6>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4">
+                <div class="quantity">
+                  <input type="button" value="+" class="plus">
+                  <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                  size="4">
+                  <input type="button" value="-" class="minus">
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 text-right">
+                <button type="button" class="btn btn-outline-danger btn-xs">
+                  <i class="far fa-trash-alt" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- END PRODUCT -->
+        </div>
+        <div class="card-footer">
+          <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
+          </div>
+          <div class="pull-right d-flex justify-content-end" style="margin: 10px">
+            <div style="margin: 5px">
+              <b>Precio Total</b>
+            </div>
+            <div class="pull-right" style="margin: 5px">
+              <b>100.000$</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5" >
+      <div class="row" id="#pago">
+        <div class="col-lg-7 mx-auto">
+          <div class="bg-white rounded-lg shadow-sm p-5">
+            <!-- Credit card form tabs -->
+            <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+              <li class="nav-item">
+                <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
+                  <i class="fa fa-credit-card"></i>
+                  Tarjeta de Crédito
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill tamaño-tarjetas-credito">
+                  <i class="fab fa-paypal"></i>>
+                  Paypal
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
+                  <i class="fa fa-university"></i>
+                  Transferencia Bancaria
+                </a>
+              </li>
+            </ul>
+            <!-- End -->
+            <!-- Credit card form content -->
+            <div class="tab-content">
+              <!-- credit card info-->
+              <div id="nav-tab-card" class="tab-pane fade show active">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="username">Nombre completo</label>
+                    <input type="text" name="username" placeholder="LeDiegue" required class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="cardNumber">Número de tarjeta</label>
+                    <div class="input-group">
+                      <input type="text" name="cardNumber" placeholder="Tu número de tarjeta" class="form-control" required>
+                      <div class="input-group-append">
+                        <span class="input-group-text text-muted tamaño-tarjetas-credito">
+                          <i class="fab fa-cc-visa"></i>
+                          <i class="fab fa-cc-mastercard"></i>
+                          <i class="fab fa-cc-amex"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <label><span class="hidden-xs">Vencimiento</span></label>
+                        <div class="input-group">
+                          <input type="number" placeholder="Mes" name="" class="form-control" required>
+                          <input type="number" placeholder="Año " name="" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group mb-4">
+                        <label data-toggle="tooltip" title="Los tres dígitos del código en el reverso de su tarjeta">CVV
+                          <i class="fa fa-question-circle"></i>
+                        </label>
+                        <input type="text" required class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm color-botones"> Confirm  </button>
+                </form>
+              </div>
+              <!-- End -->
+              <!-- Paypal info -->
+              <div id="nav-tab-paypal" class="tab-pane fade">
+                <p>Paypal es la forma más fácil de pago online</p>
+                <p>
+                  <button type="button" class="btn btn-primary rounded-pill color-botones"><i class="fab fa-paypal"></i> Ingresar a mi Paypal</button>
+                </p>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <!-- End -->
+              <!-- bank transfer info -->
+              <div id="nav-tab-bank" class="tab-pane fade">
+                <h6>Detalles de cuenta bancaria</h6>
+                <dl>
+                  <dt>Banco</dt>
+                  <dd> City Bank</dd>
+                </dl>
+                <dl>
+                  <dt>Número de cuenta</dt>
+                  <dd>7775877975</dd>
+                </dl>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <!-- End -->
+            </div>
+            <!-- End -->
+          </div>
+        </div>
+      </div>
+    </div>
+				<!-- END PRODUCT -->
+
+      <footer>
+        <div class="container-fluid footer">
+          <div class="row align-items-start">
+            <div class="col-12 col-md-4 col-lg-3 text-center mt-3">
+              <img src="img/logo.png" width="150" height="150" alt="">
+            </div>
+            <div class="col-md d-none d-md-block mr-4 text-center">
+              <b><p>AYUDA</p></b>
+              <p><a href="contacto.html">Contacto</a></p>
+              <p><a href="contacto.html">Sucursales</a></p>
+              <p><a href="contacto.html">Preguntas</a></p>
+            </div>
+            <div class="col-md d-none d-md-block text-center">
+              <b><p>COMPRAS</p></b>
+              <p><a href="product-page.html">Carrito</a></p>
+              <p><a href="fav-page.html">Favoritos</a></p>
+              <p><a href="product-page.html">Productos</a></p>
+            </div>
+            <div class="col-md text-center ">
+              <b><p>CONTACTO</p></b>
+              <div class="redes">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <p>tecnostore@gmail.com</p>
+                <p>+543813568745</p>
+              </div>
+              <div class="codigo">
+                <img src="img/qr.jpg">
+              </div>
+            </div>
+            <div class="copy">
+              <a href=""><i class="far fa-copyright"></i></a>
+              <a class="credits" href="index.html">TECNO STORE - Todos los derechos reservados - 2019</a>
+            </div>      
+          </div> 
+        </div>      
+      </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">INGRESAR</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contrasena</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <label class="" for="exampleCheck1"></label>
+                  <a href="recuperar.html">OLVIDE MI CONTRASENA</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">DATOS PERSONALES</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">NOMBRE</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">APELLIDO</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">DNI</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">PROVINCIA</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">CIUDAD</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">DOMICILIO</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">TELEFONO</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">E-MAIL</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">CONTRASENA</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

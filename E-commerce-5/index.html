@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/crown-and-lipstick.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>TecnoStore</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light bg-light header-margen">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" height="150" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle btn   color-boton" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search"></i>
+                <i _ngcontent-c2="" class="tf-ion-ios-search-strong "></i> Buscar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="" name="">
+                  <a class="btn" href="results.html" role="button"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn  color-boton" href="#" data-toggle="modal" data-target="#exampleModal">
+            REGISTRO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn  color-boton" href="#" data-toggle="modal" data-target="#exampleModal2">
+                LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Burger NavBar -->
+    <nav class="navbar  navbar-expand-lg navbar-expand-md  navbar-light sticky-top bd-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <form class="form-inline  my-2 my-lg-0  d-md-none d-lg-none">
+            <input class="form-control w-auto " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0 btn-search" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-page.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fav-page.html">Favoritos</a>
+          </li>
+        </ul>
+        <div class="d-none d-md-block d-md-flex d-lg-flex  navbar-icons">
+          <div class="cartshop-icon">
+            <a class="btn" href="cart-page.html" role="button"><i class="fas fa-shopping-cart"></i> <span class="badge badge-light">4</span>
+            </a>
+          </div>
+          <div class="favorite-icon">   
+            <button type="button" class="btn"><i class="fas fa-star"></i> <span class="badge badge-light">4</span>
+            </button>
+          </div> 
+          <div class="help-icon"> 
+            <button type="button" class="btn"><i class="fas fa-question"></i> <span class="badge badge-light"></span>
+            </button>  
+          </div> 
+        </div>
+      </div>
+    </nav>
+    <!-- / Burger NavBar -->
+    <div class="container">
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active">
+            <img class="d-block w-100 img-fluid" src="img/img-1.jpg"
+              alt="First slide">
+          </div>
+          <!--/First slide-->
+          <!--Second slide-->
+          <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="img/img-2.jpg"
+              alt="Second slide">
+          </div>
+          <!--/Second slide-->
+          <!--Third slide-->
+          <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="img/img-3.jpg"
+              alt="Third slide">
+          </div>
+          <!--/Third slide-->
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+      <!-------Product Grid----->
+
+      <section class="container justify-content-center product-card-container ">
+        <article class="row">
+          <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">    
+            <div class="card card-position">
+              <button class="btn-discount ">30 % OFF</button>
+              <a href="product-detail.html"><div class="card-img-top"><img src="https://zococity.es/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/7/1/71ow-olq3ol._sl1500_.jpg" class=" mt-2  img-fluid" alt="..."></div></a>
+                <div class="card-body">
+                  <h5 class="card-title">Bose Home Speaker</h5>
+                  <p class="card-text">Control por voz incorporado. Este nuevo dispositivo Reproduce. Pausa. Escucha en aleatorio. O salta a tu canción favorita. Tendrás millones de listas de reproducción y puedes compartir con tus contactos.</p>               
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>              
+                </div>
+            </div>
+          </div>
+          <div class="d-none d-md-none d-lg-block col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">               
+            <div class="card card-position">         
+              <a href="product-detail.html"><button class="btn-discount ">20 % OFF</button>            
+              <div class="card-img-top"><img src="https://mercadositio.com/wp-content/uploads/2019/01/IPHONE-X-FRENTE-1.jpg" class=" mt-2  img-fluid" alt="...">
+              </div></a>
+                <div class="card-body">
+                  <h5 class="card-title">I phone X</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex card-btn justify-content-center">
+                      <div class="fav-btn mr-5 ">
+                        <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                      </div>
+                      <div class="fav-btn"> 
+                        <button type="button" class="btn btn-dark btn-products  "><i class="fas fa-check"></i></button>
+                      </div>                 
+                    </div>
+                </div>   
+            </div>
+          </div> 
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                <div class="card-img-top"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdwyUZkv-NxXxQkbOb0kuE8AGo4s_mo0sAuKD9ixQJAw_Zcvz1" class=" mt-2  img-fluid" alt="..."></div>
+                <div class="card-body ">
+                  <h5 class="card-title ">LG G Flex</h5>
+                  <p class="card-text">Con su diseño innovador y eficiente, el teléfono celular LG G Flex capta la atención de inmediato. El panel negro ultra delgado y curvo crea nuevas experiencias y posibilidades para usted.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <button class="btn-discount ">30 % OFF</button>
+                  <div class="card-img-top"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jqIAoZCM-iGCt0LRA_npVBcG13wlayMIC7QWsJ4vwPLUyKwY" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Top Alexa Set</h5>
+                  <p class="card-text">
+                  Alexa le permite controlar luces, interruptores, termostatos y más con solo su voz. En esta página encontrarás los mejores dispositivos para el hogar inteligente compatibles con Alexa.</p>   
+                   <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-check"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+             <div class="card card-position">
+                <div class="card-img-top"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLAGUTVt_XuZVY6kmg3mGwxJglk5E0rF1sMYlwNn37Oj2NjZHL" class=" mt-2  img-fluid" alt="..."></div>
+                <div class="card-body">
+                <h5 class="card-title">Wireless Auriculares</h5>
+                <p class="card-text">La tecnología avanzada Bluetooth multipunto le permite administrar las llamadas y los medios de comunicación de dos dispositivos simultáneamente, claridad de cristal y graves excelentes para audio de alta calidad</p>
+               
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>                   
+                </div>
+             </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <button class="btn-discount ">30 % OFF</button>
+                  <div class="card-img-top"><img src="https://www.giftcampaign.es/media/catalog/product/cache/1/small_image/500x/040ec09b1e35df139433887a97daa66f/m/o/mo9626_03.jpg" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wireless Cargador</h5>
+                  <p class="card-text">Cargador Inalambrico para dos modems o dispositivos. No te conformes regalando a tus clientes cargadores inalámbricos personalizados de un móvil, y regala este cargador con logo luminoso apto para dos</p>
+
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>                                   
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <div class="card-img-top"><img src="https://www.latam.com/catalogolatampassperu/media/catalog/product/cache/1/image/600x/040ec09b1e35df139433887a97daa66f/N/S/NSET11643.jpg" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">I-pad Pro</h5>
+                  <p class="card-text">Los nuevos I-pad Pro son el máximo exponente de la potencia de los dispositivos móviles de Apple, y esta nueva generación no es la excepción, con una versión mejorada de  procesadores</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-check"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <div class="card-img-top"><img src="https://www.giftcampaign.es/media/catalog/product/cache/1/small_image/500x/040ec09b1e35df139433887a97daa66f/m/o/mo8647_03.jpg" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Smart Watch One</h5>
+                  <p class="card-text">Seguí con tu estilo deportivo vayas donde vayas. Este Watch Active tiene un diseño discreto y ligero con una pantalla que permite ver rápidamente, y sin complicaciones todos tus progresos camino a la línea de llegada. </p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>                  
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <button class="btn-discount ">30 % OFF</button>
+                  <div class="card-img-top"><img src="./img/mac2.webp" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Note HYGTH</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class=" fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <div class="card-img-top"><img src="./img/note.webp" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Note Pythe</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>                     
+                </div>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <button class="btn-discount ">20 % OFF</button>
+                  <div class="card-img-top"><img src="./img/note2.webp" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Notebook 2.0</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="d-none d-md-block col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2">
+               <div class="card card-position">
+                  <div class="card-img-top"><img src="https://teknopolis.vteximg.com.br/arquivos/ids/181372-500-500/Tablet-Galaxy-Tab-A-8.0-Lte-4G-16gb-Plata--SM-T385MZSACOO_1.png?v=636869783397430000" class=" mt-2  img-fluid" alt="...">
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Tablet Galaxy</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="d-none d-md-block col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20  my-2 ">
+               <div class="card card-position">
+                <div class="card-img-top"><img src="https://d34zlyc2cp9zm7.cloudfront.net/products/e2bfbc4b0ab213ddfc0bb78f52c6cc4ba480d2a12ec4305d6488495528f3614e.jpg_500" class=" mt-2  img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Tablet Next</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="d-none d-md-none d-lg-block col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20 my-2 ">
+               <div class="card card-position">
+                <div class="card-img-top"><img src="http://compratodousa.com/image/cache/catalog/dell/2018-dell-inspiron-15-5000-flagship-15-6-inch-full-hd-touchscreen-backlit-keyboard-laptop-pc-intel-core-i5-8250u-quad-core-8gb-ddr4-1tb-hdd-dvd-3-500x500.jpg" class=" mt-2  img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Laptop Dell</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex card-btn justify-content-center">
+                        <div class="fav-btn mr-5 ">
+                          <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="fav-btn"> 
+                          <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                        </div>                 
+                      </div>
+                 </div>
+               </div>
+           </div>
+           <div class="d-none d-md-none d-lg-block col-12 col-sm-6 col-md-3  col-lg-2 w-lg-20 my-2">
+             <div class="card card-position">
+              <div class="card-img-top"><img src="https://intercompras.com/images/productgallery/ASUS_90NB0HR1-M00540_ICECAT_30442104.jpg" class=" mt-2  img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Laptop 2000</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
+                <div class="d-flex card-btn justify-content-center">
+                    <div class="fav-btn mr-5 ">
+                      <button type="button" class="btn btn-dark btn-products "><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="fav-btn"> 
+                      <button type="button" class="btn btn-dark btn-products "> <i class="fas fa-shopping-cart"></i></button>
+                    </div>                 
+                  </div>     
+              </div>
+             </div>
+           </div>
+        </article>
+      </section>
+
+      <!-------/Product Grid----->
+      <!-------/Pagination----->
+      <section class="container-pag d-flex justify-content-center mt-3">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-------/Pagination----->
+      <!--Ad Slider-->        
+      <div class="slider">
+        <figure>
+          <li class="list-unstyled">
+            <img class="img-fluid" src="img/img-5.jpg" alt="">
+          </li>
+          <li class="list-unstyled">
+            <img class="img-fluid" src="img/img-6.jpg" alt="">
+          </li>
+          <li class="list-unstyled">
+            <img class="img-fluid" src="img/img-7.jpg" alt="">
+          </li>
+          <li class="list-unstyled">
+            <img class="img-fluid" src="img/img-8.jpg" alt="">
+          </li>
+        <figure>
+      </div>
+      <!--/Ad Slider-->
+      <!--Accordion-->
+      <div class="row gallery">
+        <div class="accordion col-lg-9 col-sm-12" id="accordionExample">
+          <div class="card">
+            <div class="card-header product-section" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a href="product-page.html#con2" style=" text-decoration: none;">Celulares y Smartphones</a>
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body row mx-1 products">
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img1.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img  class="img-fluid" src="img/prod/img2.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img3.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img4.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img5.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img6.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img7.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img8.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img9.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img10.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img13.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/img15.jpg">
+                  <h5>Celular HUAWEI</h3>
+                </div>
+                <a class="btn mx-auto text-danger font-weight-bold" href="product-page.html#con2" role="button">Ver Todo...</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header product-section" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <a href="product-page.html#con1">Notebooks</a>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body row mx-1 products">
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc13.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc1.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc2.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc3.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc4.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc5.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc16.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc10.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc4.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc5.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc16.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc10.jpg">
+                  <h5>Notebook HUAWEI</h3>
+                </div>
+                <a class="btn mx-auto text-danger font-weight-bold" href="product-page.html#con1" role="button">Ver Todo...</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header product-section" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 <a href="product-page.html#con3">Camaras</a> 
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body row mx-1 products">
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc6.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc7.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc8.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/gd4.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/gd7.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/gd9.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/gd12.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/gd13.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc6.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc7.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/pc8.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <div class="card col-2 mb-4 shadow-sm">
+                  <img class="img-fluid" src="img/prod/gd4.jpg">
+                  <h5>Watch HUAWEI</h3>
+                </div>
+                <a class="btn mx-auto text-danger font-weight-bold" href="product-page.html#con3" role="button">Ver Todo...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 d-lg-block d-none">
+          <img class="vertical-ad img-fluid" src="img/img-10.jpg">
+        </div>
+      </div>
+      <!--/Acordion-->
+
+      <footer>
+        <div class="container-fluid footer">
+          <div class="row align-items-start">
+            <div class="col-12 col-md-4 col-lg-3 text-center mt-3">
+              <img src="img/logo.png" width="150" height="150" alt="">
+            </div>
+            <div class="col-md d-none d-md-block mr-4 text-center">
+              <b><p>AYUDA</p></b>
+              <p><a href="contacto.html">Contacto</a></p>
+              <p><a href="contacto.html">Sucursales</a></p>
+              <p><a href="contacto.html">Preguntas</a></p>
+            </div>
+            <div class="col-md d-none d-md-block text-center">
+              <b><p>COMPRAS</p></b>
+              <p><a href="cart-page.html">Carrito</a></p>
+              <p><a href="fav-page.html">Favoritos</a></p>
+              <p><a href="product-page.html">Productos</a></p>
+            </div>
+            <div class="col-md text-center ">
+              <b><p>CONTACTO</p></b>
+              <div class="redes">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <p>tecnostore@gmail.com</p>
+                <p>+543813568745</p>
+              </div>
+              <div class="codigo">
+                <img src="img/qr.jpg">
+              </div>
+            </div>
+            <div class="copy">
+              <a href=""><i class="far fa-copyright"></i></a>
+              <a class="credits" href="index.html">TECNO STORE - Todos los derechos reservados - 2019</a>
+            </div>      
+          </div> 
+        </div>      
+      </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">INGRESAR</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contrasena</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <label class="" for="exampleCheck1"></label>
+                  <a href="recuperar.html">OLVIDE MI CONTRASENA</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">DATOS PERSONALES</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">NOMBRE</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">APELLIDO</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">DNI</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">PROVINCIA</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">CIUDAD</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">DOMICILIO</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">TELEFONO</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">E-MAIL</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">CONTRASENA</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
